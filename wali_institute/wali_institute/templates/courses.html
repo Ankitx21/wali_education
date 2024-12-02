@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <script src="https://kit.fontawesome.com/a3ac42934c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/courses.css' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="{% url 'index' %}"><img src="{% static 'images/wali_logo.png' %}" alt="Institute Logo"></a>
+            <div class="logo-text">
+                <h1>Wali Institute of</h1>
+                <h2>Teachers' Education</h2>
+                <p>Est. 2014</p>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'courses' %}">Courses</a></li>
+            <li><a href="{% url 'facilities' %}">Facilities</a></li>
+            <li><a href="{% url 'admissions' %}">Admissions</a></li>
+            <li><a href="{% url 'about_us' %}">About Us</a></li>
+            <li><a href="{% url 'gallery' %}">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Courses Section -->
+    <section class="courses-offered">
+        <h2>Course Offered</h2>
+        <h3>B.Ed.</h3>
+        <p class="duration">Duration: 2 year course</p>
+        <div class="course-image">
+            <img src="{% static 'images/harvard_course.png' %}" alt="B.Ed Program Image">
+        </div>
+        <p class="course-description">
+            We take pride in offering a diverse range of Bachelor of Education (B.Ed.) programs designed to prepare future educators for a dynamic and evolving educational landscape. Our courses provide comprehensive training and practical experiences, equipping students with the necessary knowledge and skills to excel in their teaching careers. With a focus on fostering critical thinking, pedagogical expertise, and holistic development, our programs empower aspiring educators to make a positive impact in classrooms and communities.
+        </p>
+        <h4>Subjects Offered</h4>
+        <ul class="subjects-list">
+            <li>1. Arabic</li>
+            <li>2. Bengali</li>
+            <li>3. Commerce</li>
+            <li>4. Computer Science</li>
+            <li>5. English</li>
+            <li>6. Geography</li>
+            <li>7. History</li>
+            <li>8. Life Science</li>
+            <li>9. Mathematics</li>
+            <li>10. Music</li>
+            <li>11. Physical Science</li>
+            <li>12. Sanskrit</li>
+            <li>13. Sociology</li>
+        </ul>
+        <p class="subject-description">
+            Our curriculum encompasses a wide array of subjects, allowing students to specialize in their preferred areas of interest while acquiring an in-depth understanding of educational principles. Whether your passion lies in literature, sciences, social sciences, or languages, our dedicated faculty and state-of-the-art facilities provide the perfect environment for nurturing and excelling through learning. We strive to create a holistic learning experience that empowers educators who are equipped to inspire and empower future generations.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <section class="visit-us">
+        <h2>Visit Us</h2>
+        <div class="visit-container">
+            <div class="contact-info">
+                <div class="info">
+                    <i class="fas fa-map-marker-alt" style="font-size: 30px; color: black;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-phone" style="font-size: 30px; color: black;"></i>
+                    <p>+91 0000000000</p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-envelope" style="font-size: 30px; color: black;"></i>
+                    <p>blabla@gmail.com</p>
+                </div>
+            </div>
+            <div class="map">
+                <a href="https://www.google.com/maps" target="_blank">
+                    <img src="{% static 'images/maps.png' %}" alt="Google Maps" class="map-image">
+                </a>
+            </div>
+        </div>
+        <footer class="affiliation">
+            <p>Affiliated to bla bla bla bla bla</p>
+        </footer>
+    </section>
+</body>
+</html>

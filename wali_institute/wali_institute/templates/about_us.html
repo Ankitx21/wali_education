@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://kit.fontawesome.com/a3ac42934c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/about_us.css' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="{% url 'index' %}"><img src="{% static 'images/wali_logo.png' %}" alt="Institute Logo"></a>
+            <div class="logo-text">
+                <h1>Wali Institute of</h1>
+                <h2>Teachers' Education</h2>
+                <p>Est. 2014</p>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'courses' %}">Courses</a></li>
+            <li><a href="{% url 'facilities' %}">Facilities</a></li>
+            <li><a href="{% url 'admissions' %}">Admissions</a></li>
+            <li><a href="{% url 'about_us' %}">About Us</a></li>
+            <li><a href="{% url 'gallery' %}">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <h2>Mission</h2>
+        <p>
+            At Wali Institute of Teachers’ Education, our solemn mission is to embolden and embolden educators, becoming architects of the future of education. With unwavering dedication to excellence, we ardently foster a vibrant learning milieu that nurtures erudition, proficiency, and virtues.
+        </p>
+        <p>
+            Through pioneering pedagogical techniques and bespoke mentorship, we aspire to inspire and equip aspiring pedagogues with the essential panoply of skills to effectuate an affirmative metamorphosis in classrooms and communities alike. Our mission transcends the mere dissemination of knowledge, for we strive to engender an enduring ardor for lifelong learning, promote inclusivity, and forge empathetic educators poised to chisel a more luminous and equitable tomorrow.
+        </p>
+        <p>
+            Join us in our resolute endeavor to redefine the contours of education today!
+        </p>
+
+        <h2>Vision</h2>
+        <p>
+            Our vision resonates with our profound commitment to redefining the contours of education. With a resolute focus on excellence, we aspire to be the vanguards of educational transformation, empowering educators to shape a brighter tomorrow.
+        </p>
+        <p>
+            Drawing upon pioneering pedagogical techniques and personalized mentorship, we endeavor to create a dynamic and inspiring learning environment. Our vision extends beyond the boundaries of conventional knowledge dissemination, aiming to ignite a lifelong passion for learning, foster inclusivity, and cultivate empathetic educators.
+        </p>
+        <p>
+            By equipping aspiring pedagogues with a comprehensive repertoire of skills, we envision a future where classrooms and communities thrive in harmony.
+        </p>
+        <p>
+            Together, let us embark on a steadfast journey to effectuate positive change, fueling an enduring ardor for education and sculpting a more radiant and equitable tomorrow.
+        </p>
+        <p>
+            <strong>Welcome to Wali Institute of Teachers’ Education, where our vision converges with your aspirations for a transformative educational experience.</strong>
+        </p>
+
+        <h2>Our Values</h2>
+        <ul>
+            <li><strong>Excellence:</strong> We relentlessly pursue excellence, fostering a culture of growth and innovation.</li>
+            <li><strong>Integrity:</strong> We uphold the highest standards of integrity, fostering trust and ethical conduct.</li>
+            <li><strong>Inclusivity:</strong> We celebrate diversity, embracing inclusivity and valuing unique perspectives.</li>
+            <li><strong>Empathy:</strong> We nurture empathy and compassion, understanding and responding to student needs.</li>
+            <li><strong>Collaboration:</strong> We foster collaboration, uniting educators, students, and stakeholders towards shared goals.</li>
+            <li><strong>Equity:</strong> We advocate for equity, creating equal opportunities for all learners.</li>
+        </ul>
+        <p>
+            These values shape our transformative educational ecosystem, empowering educators to make a profound impact. Join us in shaping a brighter future.
+        </p>
+
+    </section>
+
+    <section class="facilities">
+        <h2>Chairman's Note</h2>
+    
+        <!-- Facility 1 -->
+        <div class="facility">
+            <img src="facility_image1.jpg" alt="Facility 1" class="facility-image">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus viverra accumsan in nisl. Vivamus nibh cras pulvinar mattis nunc. Nunc elementum pulvinar etiam non quam.
+            </p>
+        </div>
+
+        <h2>Principal's Note</h2>
+    
+        <!-- Facility 2 -->
+        <div class="facility reverse">
+            <img src="facility_image1.jpg" alt="Facility 1" class="facility-image">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus viverra accumsan in nisl. Vivamus nibh cras pulvinar mattis nunc. Nunc elementum pulvinar etiam non quam.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="visit-us">
+        <h2>Visit Us</h2>
+        <div class="visit-container">
+            <div class="contact-info">
+                <div class="info">
+                    <i class="fas fa-map-marker-alt" style="font-size: 30px; color: black;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-phone" style="font-size: 30px; color: black;"></i>
+                    <p>+91 0000000000</p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-envelope" style="font-size: 30px; color: black;"></i>
+                    <p>blabla@gmail.com</p>
+                </div>
+            </div>
+            <div class="map">
+                <a href="https://www.google.com/maps" target="_blank">
+                    <img src="{% static 'images/maps.png' %}" alt="Google Maps" class="map-image">
+                </a>
+            </div>
+        </div>
+        <footer class="affiliation">
+            <p>Affiliated to bla bla bla bla bla</p>
+        </footer>
+    </section>
+</body>
+</html>
+
+

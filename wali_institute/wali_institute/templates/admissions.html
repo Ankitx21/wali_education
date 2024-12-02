@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions</title>
+    <script src="https://kit.fontawesome.com/a3ac42934c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/admision.css' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="{% url 'index' %}"><img src="{% static 'images/wali_logo.png' %}" alt="Institute Logo"></a>
+            <div class="logo-text">
+                <h1>Wali Institute of</h1>
+                <h2>Teachers' Education</h2>
+                <p>Est. 2014</p>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'courses' %}">Courses</a></li>
+            <li><a href="{% url 'facilities' %}">Facilities</a></li>
+            <li><a href="{% url 'admissions' %}">Admissions</a></li>
+            <li><a href="{% url 'about_us' %}">About Us</a></li>
+            <li><a href="{% url 'gallery' %}">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Admissions Section -->
+    <section class="admissions">
+        <h2>Admissions</h2>
+        <ul class="admission-details">
+            <li>Candidates should be Graduates in a school subject from a recognized university.</li>
+            <li>Candidates with at least 50% marks either in the Bachelor's Degree (Honours / General) or in the Master's Degree in School subjects are eligible to apply.</li>
+            <li>Bachelor’s in Engineering or Technology with Science and/or Mathematics, with 55% marks or any other qualification equivalent thereto, are also eligible for admission. Such candidates are required to enter the marks of B.E./ B. Tech. in the row of Honours Degree. M.E. / M. Tech result (if any) will be entered in the Master’s Degree row.</li>
+            <li>Honours Graduates in school subject should enter the Honours marks only in the row of Bachelor's degree (Honours).</li>
+            <li>In case of General Graduates, the total marks obtained should be entered in the row of Bachelor's degree (General).</li>
+            <li>For candidates with less than 50% marks in the honours degree, the total marks of pass and Honours subjects will be considered. If it becomes 50% or more, that score will be entered in Graduation (General) row.</li>
+            <li>For fresh candidates, merit list will be prepared separately for each school subject based on scoring.</li>
+            <li>For Deputed Candidates, merit list will be prepared separately for each school subject based on length of service.</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <section class="visit-us">
+        <h2>Visit Us</h2>
+        <div class="visit-container">
+            <div class="contact-info">
+                <div class="info">
+                    <i class="fas fa-map-marker-alt" style="font-size: 30px; color: black;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-phone" style="font-size: 30px; color: black;"></i>
+                    <p>+91 0000000000</p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-envelope" style="font-size: 30px; color: black;"></i>
+                    <p>blabla@gmail.com</p>
+                </div>
+            </div>
+            <div class="map">
+                <a href="https://www.google.com/maps" target="_blank">
+                    <img src="{% static 'images/maps.png' %}" srcset="" alt="Google Maps" class="map-image">
+                </a>
+            </div>
+        </div>
+        <footer class="affiliation">
+            <p>Affiliated to bla bla bla bla bla</p>
+        </footer>
+    </section>
+</body>
+</html>

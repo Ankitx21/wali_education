@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <script src="https://kit.fontawesome.com/a3ac42934c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="{% url 'index' %}"><img src="{% static 'images/wali_logo.png' %}" alt="Institute Logo"></a>
+            <div class="logo-text">
+                <h1>Wali Institute of</h1>
+                <h2>Teachers' Education</h2>
+                <p>Est. 2014</p>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'courses' %}">Courses</a></li>
+            <li><a href="{% url 'facilities' %}">Facilities</a></li>
+            <li><a href="{% url 'admissions' %}">Admissions</a></li>
+            <li><a href="{% url 'about_us' %}">About Us</a></li>
+            <li><a href="{% url 'gallery' %}">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Replace placeholders with actual image paths -->
+            <div class="gallery-item"><img src="image1.jpg" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="image2.jpg" alt="Gallery Image 2"></div>
+            <div class="gallery-item"><img src="image3.jpg" alt="Gallery Image 3"></div>
+            <div class="gallery-item"><img src="image4.jpg" alt="Gallery Image 4"></div>
+            <div class="gallery-item"><img src="image5.jpg" alt="Gallery Image 5"></div>
+            <div class="gallery-item"><img src="image6.jpg" alt="Gallery Image 6"></div>
+            <div class="gallery-item"><img src="image7.jpg" alt="Gallery Image 7"></div>
+            <div class="gallery-item"><img src="image8.jpg" alt="Gallery Image 8"></div>
+            <div class="gallery-item"><img src="image9.jpg" alt="Gallery Image 9"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="visit-us">
+        <h2>Visit Us</h2>
+        <div class="visit-container">
+            <div class="contact-info">
+                <div class="info">
+                    <i class="fas fa-map-marker-alt" style="font-size: 30px; color: black;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-phone" style="font-size: 30px; color: black;"></i>
+                    <p>+91 0000000000</p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-envelope" style="font-size: 30px; color: black;"></i>
+                    <p>blabla@gmail.com</p>
+                </div>
+            </div>
+            <div class="map">
+                <a href="https://www.google.com/maps" target="_blank">
+                    <img src="{% static 'images/maps.png' %}" alt="Google Maps" class="map-image">
+                </a>
+            </div>
+        </div>
+        <footer class="affiliation">
+            <p>Affiliated to bla bla bla bla bla</p>
+        </footer>
+    </section>
+</body>
+</html>
